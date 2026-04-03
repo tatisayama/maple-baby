@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maple Baby - Roupas Carter's originais importadas do Canadá para bebês e crianças em São Paulo. Pré-venda aberta! Entrega a partir de novembro de 2026.">
+  <meta name="keywords" content="roupa bebê importada, carters brasil, carters são paulo, roupa bebê canadá, importado bebê, body carters original">
+  <meta property="og:title" content="Maple Baby 🍁 | Carter's Original do Canadá">
+  <meta property="og:description" content="Roupas Carter's 100% originais do Canadá. Pré-venda aberta para chegada em novembro!">
+  <title>Maple Baby 🍁 | Carter's Original Importado do Canadá</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="Maple Baby" class="nav-logo-img">
+        <span class="logo-text">Maple <span class="logo-accent">Baby</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="#como-comprar" class="nav-link">Como Comprar</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#catalogo" class="btn-nav-cta" id="btn-reservar">✨ Pré-Reservar</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#catalogo" onclick="closeMenu()">Catálogo</a>
+      <a href="#como-comprar" onclick="closeMenu()">Como Comprar</a>
+      <a href="#sobre" onclick="closeMenu()">Sobre Nós</a>
+      <a href="#faq" onclick="closeMenu()">FAQ</a>
+      <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20Maple%20Baby!" class="mobile-wa" target="_blank">💬 WhatsApp</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-decorations">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <span class="float-emoji" style="top:12%;left:4%;animation-delay:0s">🍁</span>
+      <span class="float-emoji" style="top:72%;left:7%;animation-delay:1.5s">👶</span>
+      <span class="float-emoji" style="top:18%;right:6%;animation-delay:0.8s">🍁</span>
+      <span class="float-emoji" style="top:65%;right:4%;animation-delay:2.2s">✨</span>
+      <span class="float-emoji" style="top:45%;left:2%;animation-delay:1s">🌸</span>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-pulse"></span>
+        Pré-venda aberta &nbsp;•&nbsp; Chegada em 15 de novembro
+      </div>
+
+      <img src="logo.png" alt="Maple Baby Logo" class="hero-logo-img">
+
+      <h1 class="hero-title">
+        Carter's Original<br>
+        <span class="gradient-text">direto do Canadá 🍁</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Roupas autênticas Carter's compradas nas lojas físicas do Canadá com até
+        <strong>70% de desconto</strong> em relação ao mercado. Qualidade inigualável,
+        procedência garantida, entrega em São Paulo.
+      </p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-wrapper">
+        <p class="countdown-label">⏰ Coleção chega ao Brasil em:</p>
+        <div class="countdown-grid" id="countdown-grid">
+          <div class="count-card">
+            <span class="count-num" id="c-days">228</span>
+            <span class="count-lbl">Dias</span>
+          </div>
+          <div class="count-sep">:</div>
+          <div class="count-card">
+            <span class="count-num" id="c-hours">00</span>
+            <span class="count-lbl">Horas</span>
+          </div>
+          <div class="count-sep">:</div>
+          <div class="count-card">
+            <span class="count-num" id="c-mins">00</span>
+            <span class="count-lbl">Min</span>
+          </div>
+          <div class="count-sep">:</div>
+          <div class="count-card">
+            <span class="count-num" id="c-secs">00</span>
+            <span class="count-lbl">Seg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#catalogo" class="btn-primary" id="btn-catalogo">Ver Catálogo 🛍️</a>
+        <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20Maple%20Baby%20e%20quero%20reservar!" class="btn-ghost" target="_blank" id="btn-whatsapp-hero">
+          💬 Reservar pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="hero-trust-pills">
+        <span class="trust-pill">🇨🇦 100% Original Carter's</span>
+        <span class="trust-pill">📦 Entrega SP + Correios</span>
+        <span class="trust-pill">🔒 Compra Segura</span>
+        <span class="trust-pill">⚡ PIX & Cartão</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS STRIP ===== -->
+  <div class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat">
+        <strong>200+</strong>
+        <span>Peças na coleção</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>NB → 5T</strong>
+        <span>Tamanhos disponíveis</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>Carter's</strong>
+        <span>Marca 100% original</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>15 Nov</strong>
+        <span>Chegada ao Brasil</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>São Paulo</strong>
+        <span>Entrega local + Correios</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CATALOGUE ===== -->
+  <section id="catalogo">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag">Nossa Coleção</span>
+        <h2 class="section-title">Catálogo de Peças</h2>
+        <p class="section-subtitle">Todas as peças são <strong>originais Carter's</strong> compradas nas lojas do Canadá. Fotos e descrições reais dos produtos.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-panel">
+        <div class="filter-row">
+          <span class="filter-label">Categoria:</span>
+          <div class="chip-group" id="cat-filter">
+            <button class="chip active" data-cat="all">Todos</button>
+            <button class="chip" data-cat="bodies">Bodies</button>
+            <button class="chip" data-cat="conjuntos">Conjuntos</button>
+            <button class="chip" data-cat="pijamas">Pijamas</button>
+            <button class="chip" data-cat="pecas">Peças Avulsas</button>
+            <button class="chip" data-cat="casacos">Casacos</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Tamanho:</span>
+          <div class="chip-group" id="size-filter">
+            <button class="chip active" data-size="all">Todos</button>
+            <button class="chip size-chip" data-size="NB">NB</button>
+            <button class="chip size-chip" data-size="3M">3M</button>
+            <button class="chip size-chip" data-size="6M">6M</button>
+            <button class="chip size-chip" data-size="9M">9M</button>
+            <button class="chip size-chip" data-size="12M">12M</button>
+            <button class="chip size-chip" data-size="18M">18M</button>
+            <button class="chip size-chip" data-size="24M">24M</button>
+            <button class="chip size-chip" data-size="2T">2T</button>
+            <button class="chip size-chip" data-size="3T">3T</button>
+            <button class="chip size-chip" data-size="4T">4T</button>
+            <button class="chip size-chip" data-size="5T">5T</button>
+          </div>
+        </div>
+        <div class="results-count" id="results-count">Mostrando <strong id="count-num">12</strong> produtos</div>
+      </div>
+
+      <!-- Grid -->
+      <div class="product-grid" id="product-grid"></div>
+
+      <div class="catalog-note">
+        <p>Não encontrou o que procura? Entre em contato — podemos ter peças não listadas aqui!</p>
+        <a href="https://wa.me/5511999999999?text=Olá!%20Procuro%20uma%20peça%20específica%20da%20Carter's!" class="btn-outline" id="btn-wa-catalog" target="_blank">
+          💬 Consultar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO BUY ===== -->
+  <section id="como-comprar">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag">Simples e Seguro</span>
+        <h2 class="section-title">Como Comprar</h2>
+        <p class="section-subtitle">Em apenas 4 passos simples você garante suas peças Carter's originais.</p>
+      </div>
+
+      <div class="steps-flow">
+        <div class="step-card fade-in">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap">🔍</div>
+          <h3>Escolha as Peças</h3>
+          <p>Navegue pelo catálogo, filtre por tamanho ou categoria e encontre o que seu bebê merece.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card fade-in">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap">💬</div>
+          <h3>Reserve pelo WhatsApp</h3>
+          <p>Clique em "Reservar" no produto ou nos chame no WhatsApp. Confirmamos disponibilidade na hora.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card fade-in">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap">💳</div>
+          <h3>Pague com Segurança</h3>
+          <p>PIX à vista ou cartão de crédito em até 3x sem juros via link de pagamento seguro.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card fade-in">
+          <div class="step-num">04</div>
+          <div class="step-icon-wrap">📦</div>
+          <h3>Receba em Casa</h3>
+          <p>Entregamos por Correios para todo o Brasil ou mão a mão em São Paulo capital.</p>
+        </div>
+      </div>
+
+      <div class="payment-section">
+        <div class="payment-card" id="payment-pix">
+          <div class="payment-top">
+            <span class="payment-icon">⚡</span>
+            <h3>PIX</h3>
+          </div>
+          <p>Transferência instantânea<br><strong>Sem acréscimos</strong></p>
+          <span class="badge-pill green">Pagamento à vista</span>
+        </div>
+        <div class="payment-card" id="payment-card">
+          <div class="payment-top">
+            <span class="payment-icon">💳</span>
+            <h3>Cartão de Crédito</h3>
+          </div>
+          <p>Via link de pagamento seguro<br><strong>Até 3× sem juros</strong></p>
+          <span class="badge-pill blue">Parcelado</span>
+        </div>
+      </div>
+
+      <div class="preorder-banner" id="preorder-banner">
+        <div class="preorder-left">
+          <span class="preorder-tag">🎯 PRÉ-VENDA EXCLUSIVA</span>
+          <h3>Reserve agora com 50% de sinal!</h3>
+          <p>Garanta sua peça antes da chegada em <strong>15 de novembro de 2026</strong>. Pague metade agora via PIX e o restante na entrega. Reservas prioritárias!</p>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Quero%20fazer%20uma%20pré-reserva%20na%20Maple%20Baby!" class="btn-preorder" id="btn-preorder" target="_blank">
+          Fazer Pré-Reserva 🍁
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="sobre">
+    <div class="section-wrap">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-main">
+            <div class="about-flag-big">🇨🇦</div>
+            <strong>Edmonton, Alberta</strong>
+            <span>Canadá</span>
+          </div>
+          <div class="about-mini-stats">
+            <div class="mini-stat">
+              <strong>100%</strong>
+              <span>Autêntico</span>
+            </div>
+            <div class="mini-stat">
+              <strong>NF</strong>
+              <span>Comprovada</span>
+            </div>
+            <div class="mini-stat">
+              <strong>SP</strong>
+              <span>Entrega local</span>
+            </div>
+          </div>
+          <div class="about-maple-deco">🍁</div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag">Nossa História</span>
+          <h2 class="section-title left-align">Direto da fonte,<br>com amor familiar 🍁</h2>
+          <p>A <strong>Maple Baby</strong> nasceu de uma história real: nossa família compra peças Carter's originais nas lojas físicas de Edmonton (Alberta, Canadá) e traz para São Paulo com todo o carinho.</p>
+          <p>A Carter's é a maior marca de roupas infantis da América do Norte. No Canadá, os preços são significativamente menores — especialmente nas peças de <em>clearance</em> (liquidação) —, permitindo que oferecemos qualidade incomparável com preços justos.</p>
+          <p>O resultado? Peças <strong>100% originais, com etiquetas canadenses</strong>, muito mais baratas do que qualquer importador consegue oferecer no Brasil.</p>
+          <div class="about-bullets">
+            <div class="about-bullet">✅ Compradas pessoalmente nas lojas Carter's do Canadá</div>
+            <div class="about-bullet">✅ Nota fiscal disponível para verificação</div>
+            <div class="about-bullet">✅ Fotos reais dos produtos — sem surpresas</div>
+            <div class="about-bullet">✅ Entrega em São Paulo com rastreamento</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas & Respostas</h2>
+      </div>
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" id="faq-1">
+            As peças são realmente originais Carter's?
+            <span class="faq-chevron">›</span>
+          </button>
+          <div class="faq-a">
+            <p>Sim, 100%! Todas as peças são compradas diretamente nas lojas Carter's do Canadá. Temos nota fiscal de compra e todas as etiquetas originais canadenses em cada peça. Garantimos autenticidade.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" id="faq-2">
+            Quando as peças chegam ao Brasil?
+            <span class="faq-chevron">›</span>
+          </button>
+          <div class="faq-a">
+            <p>A coleção chega a São Paulo em <strong>15 de novembro de 2026</strong>. Peças em pré-venda são entregues com prioridade nos dias seguintes à chegada. Pronta-entrega será enviada imediatamente após o recebimento.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" id="faq-3">
+            Vocês entregam fora de São Paulo?
+            <span class="faq-chevron">›</span>
+          </button>
+          <div class="faq-a">
+            <p>Sim! Entregamos para todo o Brasil via Correios (PAC ou SEDEX com rastreamento). Para compradores em São Paulo capital, também realizamos entrega mão a mão mediante agendamento.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" id="faq-4">
+            Posso trocar se o tamanho não servir?
+            <span class="faq-chevron">›</span>
+          </button>
+          <div class="faq-a">
+            <p>Aceitamos pedidos de troca em até 7 dias após o recebimento, desde que a peça esteja com etiqueta e sem sinais de uso. Para evitar problemas, disponibilizamos a tabela completa de medidas Carter's antes da compra.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" id="faq-5">
+            Como funciona a pré-venda com 50% de sinal?
+            <span class="faq-chevron">›</span>
+          </button>
+          <div class="faq-a">
+            <p>Na pré-venda você paga 50% do valor via PIX agora para reservar a peça. O restante (50%) é pago no momento da entrega, após a chegada da coleção em novembro. Assim você garante sem pagar tudo de uma vez!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" id="faq-6">
+            Como funcionam os tamanhos Carter's vs. Brasil?
+            <span class="faq-chevron">›</span>
+          </button>
+          <div class="faq-a">
+            <p>A Carter's usa tamanhos por faixa etária: NB (recém-nascido), 3M, 6M, 9M, 12M, 18M, 24M, 2T, 3T, 4T e 5T. Em geral as peças são ligeiramente maiores que os tamanhos brasileiros equivalentes. Enviamos a tabela de medidas detalhada para cada pedido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <img src="logo.png" alt="Maple Baby" class="footer-logo">
+        <span class="footer-name">Maple Baby 🍁</span>
+        <p>Carter's Original do Canadá<br>para bebês e crianças de São Paulo</p>
+        <div class="footer-social">
+          <a href="https://wa.me/5511999999999" target="_blank" id="footer-wa" title="WhatsApp">💬</a>
+          <a href="#" id="footer-ig" title="Instagram">📸</a>
+          <a href="mailto:maplebabybr@gmail.com" id="footer-email" title="Email">📧</a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navegação</h4>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#como-comprar">Como Comprar</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5511999999999" target="_blank">💬 WhatsApp</a>
+        <a href="mailto:maplebabybr@gmail.com">📧 E-mail</a>
+        <a href="#">📸 Instagram</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Pagamento</h4>
+        <span>⚡ PIX (sem acréscimos)</span>
+        <span>💳 Cartão até 3× sem juros</span>
+        <span>📦 Correios PAC / SEDEX</span>
+        <span>🤝 Entrega mão a mão (SP)</span>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <p>© 2026 Maple Baby · São Paulo, SP · Importação pessoal de roupas Carter's do Canadá</p>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20Maple%20Baby%20e%20gostaria%20de%20saber%20mais!" id="wa-float" target="_blank" title="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.549 4.117 1.51 5.847L.057 23.886l6.184-1.621A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.895 9.895 0 01-5.049-1.38l-.362-.215-3.759.985 1.003-3.668-.235-.376A9.854 9.854 0 012.106 12C2.106 6.527 6.527 2.106 12 2.106 17.473 2.106 21.894 6.527 21.894 12c0 5.473-4.421 9.894-9.894 9.894z"/>
+    </svg>
+    <span class="wa-label">WhatsApp</span>
+  </a>
+
+  <!-- ===== PRODUCT MODAL ===== -->
+  <div id="modal-overlay" class="modal-hidden" onclick="handleOverlayClick(event)">
+    <div id="modal-box" role="dialog" aria-modal="true">
+      <button id="modal-close-btn" onclick="closeModal()" aria-label="Fechar">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
