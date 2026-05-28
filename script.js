@@ -6,14 +6,11 @@
 // ===== PRODUCT IMAGES =====
 const PRODUCT_IMAGES = {
   1: 'images/prod_7pack_mc.jpg',
-  2: 'images/prod_7pack_mc.jpg',
-  3: 'images/prod_7pack_mc.jpg',
-  4: 'images/prod_stork_set.jpg',
-  5: 'images/prod_stork_set.jpg',
-  6: 'images/prod_4pack_bluepink.jpg',
-  7: 'images/prod_barn_cardigan.jpg',
-  8: 'images/prod_safari_4pack.jpg',
-  9: 'images/prod_bunny_cardigan.jpg'
+  2: 'images/prod_stork_set.jpg',
+  3: 'images/prod_4pack_bluepink.jpg',
+  4: 'images/prod_barn_cardigan.jpg',
+  5: 'images/prod_safari_4pack.jpg',
+  6: 'images/prod_bunny_cardigan.jpg'
 };
 
 // ===== PRODUCT DATA =====
@@ -23,77 +20,35 @@ const PRODUCTS = [
   {
     id: 1,
     name: "Kit 7 Bodies Manga Curta",
-    subtitle: "Original Girl — Estampas Variadas · 6M",
+    subtitle: "Original Girl — Estampas Variadas",
     category: "bodies",
-    sizes: ["6M"],
+    sizes: ["6M", "9M", "12M"],
     price: 189,
-    stock: 2,
+    stock: 6,
     status: "disponivel",
     emoji: "🌸",
     gradient: "linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 50%, #FFF0F6 100%)",
-    description: "Kit com 7 bodies manga curta Carter's linha Original para meninas. Estampas variadas: florais, listras, animais e sólidas. Algodão 100% macio — ideal para o calor brasileiro!",
-    details: ["7 bodies inclusos", "Algodão 100% macio e respirável", "Botões nas pernas para fácil troca", "Tamanho: 6M (3-6 meses)"]
+    description: "Kit com 7 bodies manga curta Carter's linha Original para meninas. Estampas variadas: florais, listras, animais e sólidas. Algodão 100% — ideal para o calor brasileiro! Disponível em 3 tamanhos.",
+    details: ["7 bodies inclusos", "Algodão 100% macio e respirável", "Botões nas pernas para fácil troca", "Tamanhos: 6M, 9M e 12M (2 kits por tamanho)"]
   },
   {
     id: 2,
-    name: "Kit 7 Bodies Manga Curta",
-    subtitle: "Original Girl — Estampas Variadas · 9M",
-    category: "bodies",
-    sizes: ["9M"],
-    price: 189,
-    stock: 2,
+    name: "Kit 3 Peças Stork Little",
+    subtitle: "Little Character Set — Cegonha",
+    category: "conjuntos",
+    sizes: ["6M", "9M"],
+    price: 119,
+    stock: 4,
     status: "disponivel",
-    emoji: "🌸",
-    gradient: "linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 50%, #FFF0F6 100%)",
-    description: "Kit com 7 bodies manga curta Carter's linha Original para meninas. Estampas variadas: florais, listras, animais e sólidas. Algodão 100% macio — ideal para o calor brasileiro!",
-    details: ["7 bodies inclusos", "Algodão 100% macio e respirável", "Botões nas pernas para fácil troca", "Tamanho: 9M (6-9 meses)"]
+    emoji: "🦢",
+    gradient: "linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 50%, #FAFAFA 100%)",
+    description: "Conjunto 3 peças Carter's com tema de cegonha (stork). Inclui body manga curta com bordado, calça listrada e babador combinando. Presente perfeito para maternidade!",
+    details: ["3 peças incluídas", "Body + Calça + Babador", "Bordado de cegonha delicado", "Tamanhos: 6M e 9M (2 kits por tamanho)"]
   },
   {
     id: 3,
-    name: "Kit 7 Bodies Manga Curta",
-    subtitle: "Original Girl — Estampas Variadas · 12M",
-    category: "bodies",
-    sizes: ["12M"],
-    price: 189,
-    stock: 2,
-    status: "disponivel",
-    emoji: "🌸",
-    gradient: "linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 50%, #FFF0F6 100%)",
-    description: "Kit com 7 bodies manga curta Carter's linha Original para meninas. Estampas variadas: florais, listras, animais e sólidas. Algodão 100% macio — ideal para o calor brasileiro!",
-    details: ["7 bodies inclusos", "Algodão 100% macio e respirável", "Botões nas pernas para fácil troca", "Tamanho: 12M (9-12 meses)"]
-  },
-  {
-    id: 4,
-    name: "Kit 3 Peças Stork Little",
-    subtitle: "Little Character Set — Branco · 6M",
-    category: "conjuntos",
-    sizes: ["6M"],
-    price: 119,
-    stock: 2,
-    status: "disponivel",
-    emoji: "🦢",
-    gradient: "linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 50%, #FAFAFA 100%)",
-    description: "Conjunto 3 peças Carter's com tema de cegonha (stork). Inclui body manga curta com bordado, calça listrada e babador combinando. Presente perfeito para maternidade!",
-    details: ["3 peças incluídas", "Body + Calça + Babador", "Bordado de cegonha delicado", "Tamanho: 6M (3-6 meses)"]
-  },
-  {
-    id: 5,
-    name: "Kit 3 Peças Stork Little",
-    subtitle: "Little Character Set — Branco · 9M",
-    category: "conjuntos",
-    sizes: ["9M"],
-    price: 119,
-    stock: 2,
-    status: "disponivel",
-    emoji: "🦢",
-    gradient: "linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 50%, #FAFAFA 100%)",
-    description: "Conjunto 3 peças Carter's com tema de cegonha (stork). Inclui body manga curta com bordado, calça listrada e babador combinando. Presente perfeito para maternidade!",
-    details: ["3 peças incluídas", "Body + Calça + Babador", "Bordado de cegonha delicado", "Tamanho: 9M (6-9 meses)"]
-  },
-  {
-    id: 6,
     name: "Kit 4 Bodies Manga Longa",
-    subtitle: "Multipack Blue/Pink — Estampas Mistas · 12M",
+    subtitle: "Multipack Blue/Pink — Estampas Mistas",
     category: "bodies",
     sizes: ["12M"],
     price: 149,
@@ -105,9 +60,9 @@ const PRODUCTS = [
     details: ["4 bodies inclusos", "Mix de azul e rosa", "Algodão 100% macio", "Tamanho: 12M (9-12 meses)"]
   },
   {
-    id: 7,
+    id: 4,
     name: "Kit 3 Peças Barn Print",
-    subtitle: "Little Cardigan Set — Fazendinha · 6M",
+    subtitle: "Little Cardigan Set — Fazendinha",
     category: "conjuntos",
     sizes: ["6M"],
     price: 119,
@@ -115,13 +70,13 @@ const PRODUCTS = [
     status: "disponivel",
     emoji: "🐄",
     gradient: "linear-gradient(135deg, #FDF2F8 0%, #FBCFE8 40%, #FEF9EE 100%)",
-    description: "Conjunto 3 peças encantador com estampa de fazenda: vacas, porquinhos e galinhas. Cardigan de tricô + body + calça combinando. Muito fofo e quentinho para o inverno!",
+    description: "Conjunto 3 peças encantador com estampa de fazenda: vacas, porquinhos e galinhas. Cardigan de tricô + body + calça combinando. Muito fofo e quentinho!",
     details: ["3 peças incluídas", "Cardigan + Body + Calça", "Estampa fazendinha Barn Print", "Tamanho: 6M (3-6 meses)"]
   },
   {
-    id: 8,
+    id: 5,
     name: "Kit 4 Bodies Manga Longa",
-    subtitle: "Safari Print — Animais Selvagens · 9M",
+    subtitle: "Safari Print — Animais Selvagens",
     category: "bodies",
     sizes: ["9M"],
     price: 149,
@@ -133,9 +88,9 @@ const PRODUCTS = [
     details: ["4 bodies inclusos", "Estampas de animais safari", "Algodão 100% macio", "Tamanho: 9M (6-9 meses)"]
   },
   {
-    id: 9,
+    id: 6,
     name: "Kit 3 Peças Bunny Little",
-    subtitle: "Little Cardigan Set — Coelhinho Rosa · 6M",
+    subtitle: "Little Cardigan Set — Coelhinho Rosa",
     category: "conjuntos",
     sizes: ["6M"],
     price: 119,
@@ -147,6 +102,7 @@ const PRODUCTS = [
     details: ["3 peças incluídas", "Cardigan + Body + Calça", "Aplique de coelhinho no cardigan", "Tamanho: 6M (3-6 meses)"]
   }
 ];
+
 
 
 // ===================================================
